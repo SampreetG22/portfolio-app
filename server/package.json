@@ -1,0 +1,24 @@
+{
+  "name": "sam-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SampreetG22/portfolio-app.git"
+  },
+  "author": "Sampreet Gumparla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SampreetG22/portfolio-app/issues"
+  },
+  "homepage": "https://github.com/SampreetG22/portfolio-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.1",
+    "nodemon": "^3.1.0"
+  }
+}
