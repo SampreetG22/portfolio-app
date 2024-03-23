@@ -1,0 +1,136 @@
+.App {
+  text-align: center;
+  max-width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 3vw;
+  background: linear-gradient(to right, white 40%, #d757d71f 20% , white 40%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container {
+  background-color: purple;
+  height: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 2vw;
+  color: white;
+  box-shadow: 0px 0px 12px purple;
+  font-family: "Poppins";
+  width: 96%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logoAndTitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  margin-right: 1vw;
+}
+
+.name {
+  font-size: 2.8vw;
+  font-weight: 400;
+}
+
+.navigatorsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 48%;
+  margin-right: 2%;
+  padding-right: 2vw;
+}
+
+.navigators {
+  cursor: pointer;
+  padding: 0.2vw 1.5vw;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+  font-size: 1.1vw;
+}
+
+.navigators:hover {
+  background-color: white;
+  color: purple;
+}
+
+.homeContainer{
+  height: 93vh;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.introTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.myImage {
+  width: 25%;
+}
+.subTitle{
+  line-height: 2vw;
+  color: gray;
+  font-size: 1.2vw;
+}
+.developer{
+  width: 32%;
+}
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.homeContainer .title.slide-in-left,
+.homeContainer .subTitle.slide-in-left,
+.homeContainer .myImage.slide-in-left {
+  animation: slide-in-left 1s ease forwards;
+}
+.homeContainer .developer.slide-in-right,
+.homeContainer .socialMediaContainer.slide-in-right {
+  animation: slide-in-right 1s ease forwards;
+}
+.socialMediaContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 5vw;
+}

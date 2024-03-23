@@ -1,0 +1,37 @@
+.aboutContainer{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.aboutContainer.loaded .title {
+  animation: slide-in-right 0.8s ease forwards;
+}
+
+.aboutContainer.loaded .subTitle {
+  animation: slide-in-left 0.8s ease forwards;
+}

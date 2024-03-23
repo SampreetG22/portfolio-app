@@ -1,0 +1,59 @@
+.skillsContainer{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: -2vw;
+}
+.skillsList{
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 28vw;
+  overflow-y: scroll;
+}
+.skillsList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.skillsList::-webkit-scrollbar-thumb {
+  background-color: #0000006e;
+  border-radius: 6px;
+}
+
+.skillsList::-webkit-scrollbar-thumb:hover {
+  background-color: #000000;
+}
+
+.skillsList::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+.eachCard{
+  width: 8vw;
+  height: 8vw;
+  margin: 1.8vw;
+  box-shadow: 0px 0px 15px #0000006e;
+  border-radius: 15px;
+  padding: 1.2vw;
+  margin-bottom: 2vw;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.eachCard:hover{
+  transform: scale(1.2);
+}
+.skillImage{
+  width: 40%;
+  border-radius: 15%;
+}
+.skillName{
+  font-size: 1.1vw;
+  font-weight: 600;
+  letter-spacing: 0.2vw;
+}
