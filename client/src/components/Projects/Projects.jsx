@@ -21,10 +21,15 @@ export default function Projects() {
     }
   };
   return (
-    <div>
+    <div style={{ minHeight: "35vw" }}>
       <h1 style={{ fontWeight: "400", fontSize: "3.3vw" }}>
         CAPSTONE PROJECTS
       </h1>
+      {projects.length === 0 && (
+        <p style={{ marginTop: "20%" }}>
+          ----Run the backend server to get the project data----
+        </p>
+      )}
       {projects.map((each, i) => (
         <Accordion sx={{ boxShadow: "0px 0px 10px silver" }}>
           <AccordionSummary
